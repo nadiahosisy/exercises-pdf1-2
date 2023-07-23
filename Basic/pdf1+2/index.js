@@ -1,4 +1,4 @@
-//Ex-1
+//Ex-1----------------------------------------------------------------------------------------------
 function boolToWord(bool) {
   return bool ? "Yes" : "No";
 }
@@ -6,7 +6,7 @@ function boolToWord(bool) {
 console.log(boolToWord(true));
 console.log(boolToWord(false));
 
-//Ex 2.1
+//Ex 2.1----------------------------------------------------------------------------------------------
 const sumOfTheTwoLowest = (arr) => {
   let min = arr[0];
 
@@ -26,7 +26,7 @@ const sumOfTheTwoLowest = (arr) => {
 
 console.log(sumOfTheTwoLowest([10, 343445353, 3453445, 3453545353453]));
 
-//Ex2.2
+//Ex2.2----------------------------------------------------------------------------------------------
 debugger;
 const binToInt = (arr) => {
   let int = 0;
@@ -42,7 +42,7 @@ console.log(binToInt([1, 1, 1, 1])); //  4       arr[4]
 
 ///      ^1  2^4    2^3     2^2    2^1     2^0
 
-//EX-2.3
+//EX-2.3----------------------------------------------------------------------------------------------
 const findNextSquare = (number) => {
   // number =  100, 121, 155, 268
   let perfectNumber = Math.sqrt(number); // 100 -> 10, 121 -> 11, 155 ->
@@ -59,7 +59,7 @@ console.log(findNextSquare(625));
 
 console.log(findNextSquare(114));
 
-//Ex-2.4
+//Ex-2.4----------------------------------------------------------------------------------------------
 const findUniq = (arr) => {
   //                                          i i+1    i+2             j
   // [1,1,1,2,1,1,] =>2,    [3,3,4,3,3,3,3] => 4,   [2,2,1] => 1,     [7, 7,    7,   7,   7,7,7,8] =>8 ,    [0,9,9,9,9,9,9,9] =>0
@@ -100,7 +100,7 @@ console.log("Solution with XOR " + " " + findUniq2([3, 3, 4, 3, 3, 3, 3]));
 // 1   0     1
 // 1   1     0
 
-//Ex-2.5
+//Ex-2.5----------------------------------------------------------------------------------------------
 const summation = (num) => {
   // 5 => 1+2+3+4+5;        2 => 1+2;       4 => 1+2+3+4;
   let number = 0;
@@ -119,7 +119,7 @@ console.log(summation(2));
 // for (let i = 0; i < 10; i++) {
 //   console.log(i * 2);
 // }
-//Ex2.6
+//Ex2.6----------------------------------------------------------------------------------------------
 const centuryFromYear = (number) => {
   if (number % 100 === 0) {
     return number / 100;
@@ -132,7 +132,7 @@ console.log(centuryFromYear(2000));
 console.log(centuryFromYear(1601));
 console.log(centuryFromYear(2023));
 
-//Ex-2.7
+//Ex-2.7----------------------------------------------------------------------------------------------
 const basicOp = (op, num1, num2) => {
   if (op === "+") {
     return num1 + num2;
@@ -149,7 +149,7 @@ console.log(basicOp("*", 8, 3));
 console.log(basicOp("+", 2, 3));
 console.log(basicOp("/", 5, 3));
 console.log(basicOp("-", 2, 3));
-//Ex3.1
+//Ex3.1----------------------------------------------------------------------------------------------
 const nb_year = (p0, percent, aug, p) => {
   let count = 0;
   let population = p0;
@@ -163,7 +163,7 @@ const nb_year = (p0, percent, aug, p) => {
 console.log(nb_year(1000, 2, 50, 1200));
 console.log(nb_year(1500, 5, 100, 5000));
 console.log(nb_year(1500000, 2.5, 10000, 2000000));
-//Ex-3.2
+//Ex-3.2----------------------------------------------------------------------------------------------
 // [[5,0],[1,3],[10,8],[5,8],[15,6]]
 
 arr = [
@@ -189,7 +189,7 @@ console.log(arr[2]);
 console.log(arr[3]);
 console.log(arr[4]);
 
-//Ex-4.1
+//Ex-4.1----------------------------------------------------------------------------------------------
 const fib = (number) => {
   if (number === 2 || number === 1 || number === 0) {
     return 1;
@@ -217,20 +217,20 @@ console.log(fib(6));
 
 // console.log(fibLoop(10));
 
-//Ex-5.1
+//Ex-5.1----------------------------------------------------------------------------------------------
 const removeFirstAndLastCharacters = (str) => {
   return str.slice(1, -1);
 };
 
 console.log(removeFirstAndLastCharacters("hello You"));
 
-//Ex-5.2
+//Ex-5.2----------------------------------------------------------------------------------------------
 const repeat_str = (count, src) => {
   return src.repeat(count);
 };
 console.log(repeat_str(6, "|"));
 console.log(repeat_str(5, "Hello"));
-//Ex-5.3
+//Ex-5.3----------------------------------------------------------------------------------------------
 const toCamelCase = (str) => {
   //  the-stealth
   let newstring = "";
@@ -257,7 +257,7 @@ console.log(toCamelCase("the-stealth-warrior_and_good_guy"));
 // }
 
 //console.log(nn);
-//Ex-5.4
+//Ex-5.4----------------------------------------------------------------------------------------------
 const toWeirdCase = (str) => {
   let newStr = "";
   for (let i = 0; i < str.length; i++) {
@@ -272,7 +272,7 @@ const toWeirdCase = (str) => {
 
 //console.log(toWeirdCase("String"));
 console.log(toWeirdCase("Weird string case"));
-//Ex-5.5
+//Ex-5.5----------------------------------------------------------------------------------------------
 const nameToInit = (name) => {
   let initial = "";
   initial += name[0];
@@ -290,7 +290,7 @@ console.log(nameToInit("Patrick Feeney"));
 
 // return name[0];
 
-//Ex-5.6
+//Ex-5.6----------------------------------------------------------------------------------------------
 const maskify = (str) => {
   if (str.length < 4) {
     return str;
@@ -316,7 +316,7 @@ console.log(maskify("Nananananananananananananananana Batman!"));
 //maskify("1"); => 1
 //maskify(""); => ""
 // !nam
-//Ex-5.7
+//Ex-5.7----------------------------------------------------------------------------------------------
 
 const shortest = (array) => {
   let short = array[0].length;
@@ -328,7 +328,7 @@ const shortest = (array) => {
   return short;
 };
 console.log(shortest(["hi", "myc", "xxx", "nadia", "abdulah"]));
-//Ex-5.8
+//Ex-5.8----------------------------------------------------------------------------------------------
 const longest = (array) => {
   let long = array[0].length;
   for (let i = 1; i < array.length; i++) {
@@ -339,7 +339,7 @@ const longest = (array) => {
   return long;
 };
 console.log(longest(["hi", "myc", "xxx", "nadia", "abdulah"]));
-//Ex-6.1
+//Ex-6.1----------------------------------------------------------------------------------------------
 const accum = (str) => {
   let result = "";
   for (let i = 0; i < str.length; i++) {
@@ -354,7 +354,7 @@ console.log(accum("abcd"));
 console.log(accum("RqaEzty"));
 console.log(accum("cwAt"));
 
-//Ex-6.2
+//Ex-6.2----------------------------------------------------------------------------------------------
 const numOfDups = (str) => {
   let result = {};
 
@@ -370,7 +370,7 @@ const numOfDups = (str) => {
 
 console.log(numOfDups("Indivisibilities"));
 
-//Ex-6.3
+//Ex-6.3----------------------------------------------------------------------------------------------
 const takeTwoString = (str1, str2) => {
   let result = "";
   let str3 = str1 + str2;
@@ -388,7 +388,7 @@ const takeTwoString = (str1, str2) => {
 };
 
 console.log(takeTwoString("xyaabbbccccdefww", "xxxxyyyyabklmopq"));
-
+//Ex-6.4----------------------------------------------------------------------------------------------
 const isogram = (str) => {
   let result = {};
 
@@ -402,8 +402,42 @@ const isogram = (str) => {
   return Object.values(result).filter((m) => m > 1).length != 0 ? false : true;
 };
 console.log(isogram("moOse"));
+//Ex-7
+// filter method
+const exampleArray = [1, 2, 3, 4, 5];
 
-const perimeterOfRectangle = (l, w) => {
-  return l * 2 + w * 2;
+const filterFunction = (array) => {
+  const filteredArray = [];
+  let filteredIndex = 0;
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] < 4) {
+      filteredArray[filteredIndex] = array[i];
+      filteredIndex++;
+    }
+  }
+  return filteredArray;
 };
+console.log(filterFunction(exampleArray));
+//Ex-7---------------------------------------------------------------------------------------------
+// foreach method
+const forEachFunction = (array) => {
+  for (let value of array) {
+    console.log(value * value);
+  }
+};
+forEachFunction(exampleArray);
+
+// map method
+const mapFunction = (array) => {
+  const newArray = [];
+  for (let value of array) {
+    newArray.push(value * 2);
+  }
+  return newArray;
+};
+console.log(mapFunction(exampleArray));
+
+//Ex-8----------------------------------------------------------------------------------------------
+const perimeterOfRectangle = (l, w) => l * 2 + w * 2;
+
 console.log(perimeterOfRectangle(20, 10));
